@@ -1,0 +1,19 @@
+.path-section{
+    padding: 40px 0;
+}
+
+.centering{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2{
+        text-align: center;
+    }
+
+    img{
+        max-width: 585px;
+        width: 100%;
+    }
+}

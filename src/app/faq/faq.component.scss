@@ -1,0 +1,117 @@
+.faq-section{
+    background-color: #FAF8F2;
+    padding: 40px 0;
+
+    h2{
+        margin-bottom: 80px;
+    }
+}
+
+.last-accordion{
+    ::ng-deep{
+        .panel{
+            border: none !important;
+        }
+    }
+}
+
+accordion{
+    margin-bottom: 24px;
+}
+
+accordion-group{
+
+    .drop{
+        width: 36px;
+        height: 36px;
+        background: rgb(139,58,51);
+        background: linear-gradient(270deg, rgba(139,58,51,1) 0%, rgba(250,146,121,1) 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        border-radius: 36px;
+    }
+
+    .pull-left{
+        width: 90%;
+    }
+
+    h5{
+        font-size: 1.1rem;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    ::ng-deep{
+        .panel{
+            border: none !important;
+            border-bottom: 1px solid rgba(139, 58, 51, .1) !important;
+            background-color: transparent;
+            border-radius: 0;
+        }
+
+        button{
+            text-decoration: none;
+            color: rgba(28, 23, 16, .8) !important;
+            font-weight: 400;
+            padding-left: 0;
+            font-size: 1.25rem;
+            text-align: left;
+            border: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .panel-heading{
+            margin-left: 0;
+            padding-left: 0;
+            background: transparent;
+            border: none;
+        }
+
+        .panel-body{
+            color: rgba(28, 23, 16, .8);
+            font-weight: 400;
+            margin-left: 0;
+            padding-left: 0;
+            font-size: .9rem;
+            padding-top: 0;
+        }
+    }
+}
+
+.imagery-section{
+    display: flex;
+    justify-content: right;
+
+    .imagery{
+        max-width: 400px;
+    }
+
+    img{
+        max-width: 400px;
+        width: 100%;
+    }
+
+    h5{
+        margin-top: 16px;
+        color: #8B3A33;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .imagery-section{
+        justify-content: center;
+    }
+
+    .faq-section{
+    
+        h2{
+            margin-bottom: 30px;
+        }
+    }
+  }

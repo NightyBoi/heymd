@@ -1,0 +1,147 @@
+.main-container{
+    padding: 15px;
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    bottom: 15px;
+    width: calc(100% - 6px);
+    height: 300px;
+    z-index: 0;
+    border-radius: 20px;
+    background: rgb(199,165,154);
+    background: linear-gradient(0deg, rgba(199,165,154,1) 0%, rgba(251,249,243,0) 100%);
+}
+
+.main-row{
+    background-image: url('../../../public/lander.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.main-col{
+    padding: 16px 32px;
+    padding-bottom: 40px;
+    z-index: 1;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .logo{
+        max-width: 70px;
+        width: 100%;
+    }
+
+    .links{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        padding: 0 24px;
+    }
+
+    .link{
+        color: white;
+        text-decoration: none;
+        padding: 12px;
+        font-weight: 300;
+        font-size: .9rem;
+    }
+
+    .active{
+        font-weight: 500;
+        position: relative;
+    }
+
+    .active::before{
+        content: "";
+        position: absolute;
+        left: 3px;
+        top: 20px;
+        width: 4px;
+        height: 4px;
+        background-color: white;
+        border-radius: 8px;
+
+    }
+    
+}
+
+h1{
+    max-width: 565px;
+    width: 100%;
+    color: white;
+    font-weight: 600;
+    margin-top: 160px;
+}
+
+h5{
+    color: rgb(243, 243, 243);
+    max-width: 283px;
+    width: 100%;
+    font-weight: 400;
+    margin-top: 16px;
+}
+
+.cta-line{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.secondary-button{
+    width: auto;
+    height: auto;
+    padding: 8px 16px;
+    margin-left: 16px;
+}
+
+.tertiary-button{
+    border: none;
+    background-color: rgba(255,255,255, .4);
+    border-radius: 40px;
+    height: 39px;
+    width: 39px;
+    margin-right: 16px;
+}
+
+.verifications{
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 160px;
+}
+
+.verification{
+    backdrop-filter: blur(10px);
+    background-color: rgba(255,255,255,.3);
+    border-radius: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: left;
+    padding: 16px 24px;
+    flex-grow: 1;
+
+    p{
+        margin-bottom: 0;
+        color: white;
+        line-height: 1rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    h1{
+        margin-top: 380px;
+    }
+  }

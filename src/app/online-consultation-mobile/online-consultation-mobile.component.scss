@@ -1,0 +1,19 @@
+.mobile-section{
+    background-image: url('../../../public/consult-mobi.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    padding-top: 800px;
+    padding-bottom: 50px;
+}
+
+.centering{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h2{
+        width: 80%;
+        text-align: center;
+    }
+}

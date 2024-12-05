@@ -1,0 +1,66 @@
+<div class="container-fluid faq-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2><span class="highlight">Frequently</span> Asked <br> Questions</h2>
+
+                <accordion [isAnimated]="true" [closeOthers]="true">
+                    <accordion-group style="position: relative;">
+                        <button
+                        class="btn btn-block justify-content-between d-flex w-100 "
+                        accordion-heading type="button" (click)="changeSelection(1)">
+                            <div class="pull-left float-left"><h5>We ship to 49 states - We don't ship to MS</h5></div>
+                            <span class="float-right pull-right drop"><i class="fa-solid fa-angle-down" [class.fa-angle-down]="currentSelection != 1" [class.fa-angle-up]="currentSelection == 1"></i></span>
+                        </button>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis nisl non felis finibus iaculis vitae vel mauris. Phasellus tempus euismod aliquam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; 
+                    </accordion-group>
+                    <accordion-group style="position: relative;">
+                        <button
+                        class="btn btn-block justify-content-between d-flex w-100 "
+                        accordion-heading type="button" (click)="changeSelection(2)">
+                            <div class="pull-left float-left"><h5>Do I need a prescription?</h5></div>
+                            <span class="float-right pull-right drop"><i class="fa-solid fa-angle-down" [class.fa-angle-down]="currentSelection != 2" [class.fa-angle-up]="currentSelection == 2"></i></span>
+                        </button>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis nisl non felis finibus iaculis vitae vel mauris. Phasellus tempus euismod aliquam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; 
+                    </accordion-group>
+                    <accordion-group style="position: relative;">
+                        <button
+                        class="btn btn-block justify-content-between d-flex w-100 "
+                        accordion-heading type="button" (click)="changeSelection(3)">
+                            <div class="pull-left float-left"><h5>What happens if the doctor decides that I'm not a candidate for the medication?</h5></div>
+                            <span class="float-right pull-right drop"><i class="fa-solid fa-angle-down" [class.fa-angle-down]="currentSelection != 3" [class.fa-angle-up]="currentSelection == 3"></i></span>
+                        </button>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis nisl non felis finibus iaculis vitae vel mauris. Phasellus tempus euismod aliquam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; 
+                    </accordion-group>
+                    <accordion-group style="position: relative;">
+                        <button
+                        class="btn btn-block justify-content-between d-flex w-100 "
+                        accordion-heading type="button" (click)="changeSelection(4)">
+                            <div class="pull-left float-left"><h5>How much does the program cost?</h5></div>
+                            <span class="float-right pull-right drop"><i class="fa-solid fa-angle-down" [class.fa-angle-down]="currentSelection != 4" [class.fa-angle-up]="currentSelection == 4"></i></span>
+                        </button>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis nisl non felis finibus iaculis vitae vel mauris. Phasellus tempus euismod aliquam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; 
+                    </accordion-group>
+                    <accordion-group style="position: relative;">
+                        <button
+                        class="btn btn-block justify-content-between d-flex w-100 "
+                        accordion-heading type="button" (click)="changeSelection(5)">
+                            <div class="pull-left float-left"><h5>Can I cancel at anytime?</h5></div>
+                            <span class="float-right pull-right drop"><i class="fa-solid fa-angle-down" [class.fa-angle-down]="currentSelection != 5" [class.fa-angle-up]="currentSelection == 5"></i></span>
+                        </button>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis nisl non felis finibus iaculis vitae vel mauris. Phasellus tempus euismod aliquam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; 
+                    </accordion-group>
+                    
+                  </accordion>
+            </div>
+            <div class="col-md-6">
+                <div class="imagery-section">
+                    <div class="imagery">
+                        <img src="faq.png">
+                        <h5>Hundreds of customers join us daily to start their weight loss journey</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

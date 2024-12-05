@@ -1,0 +1,148 @@
+.buy-section{
+    padding: 40px 16px;
+    padding-top: 60px;
+    background-image: url("../../../public/sema-bg.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 0;
+}
+
+.gallery-imgs{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.ratings{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 24px;
+    margin-top: 80px;
+    margin-bottom: 16px;
+}
+
+.look{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 8px;
+
+    p{
+        margin-bottom: 0;
+    }
+
+    .back{
+        color: rgba(28, 23, 16, .4);
+        text-decoration: none;
+    }
+
+    .back:hover{
+        text-decoration: underline;
+    }
+}
+
+.stars{
+    background-color: #FAF8F2;
+    border-radius: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 8px 16px;
+
+    p{
+        margin-bottom: 0;
+        color: #8B3A33;
+        font-weight: 700;
+        margin-left: 8px;
+    }
+}
+
+.approach{
+    color: rgba(28, 23, 16, .4);
+}
+
+.product{
+    max-width: 492px;
+    width: 100%;
+}
+
+.product-col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.desc{
+    color: rgba(28, 23, 16, .5);
+    font-weight: 400;
+}
+
+.pricing-div{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    border: 1px solid rgba(139, 58, 51, 1);
+    width: 100%;
+    border-radius: 10px;
+
+    ul{
+        margin: 0;
+    }
+
+    li{
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+
+    h4{
+        margin-bottom: 0;
+    }
+
+    p{
+        margin-bottom: 0;
+        font-weight: 600;
+    }
+
+    .original{
+        color: rgba(28, 23, 16, .3);
+        text-decoration: line-through;
+    }
+}
+
+.buttons{
+    margin-top: 16px;
+}
+
+.primary-button{
+    width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+    .gallery-imgs{
+        flex-direction: row;
+        align-items: center;
+    }
+  }
+
+@media only screen and (max-width: 991px) {
+    .ratings{
+        margin-top: 16px;
+    }
+
+    .buy-section{
+        background-image: none;
+    }
+
+    .product{
+        border-radius: 100%;
+    }
+
+    .pricing-div{
+        margin-top: 32px;
+    }
+  }

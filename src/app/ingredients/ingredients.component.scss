@@ -1,0 +1,117 @@
+.product{
+    right: 0;
+    left: 32px;
+    top: 120px;
+    position: absolute;
+    margin-inline: auto; 
+    z-index: 1;
+}
+
+.ingredient-section{
+    padding: 40px 24px;
+    background: rgb(233,209,183);
+    background: url("../../../public/sema-bg.png"), radial-gradient(circle, rgba(233,209,183,1) 58%, rgba(246,226,205,1) 100%);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 50%;
+    border-radius: 20px;
+    margin-bottom: 32px;
+
+    .title-row{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 32px;
+    }
+
+    h2{
+        max-width: 365px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .ing-row{
+        margin-top: 0;
+    }
+
+    .col-ing{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        margin-bottom: 24px;
+    }
+
+    .desc{
+        text-align: center;
+    }
+
+    .ingredient{
+        max-width: 300px;
+        width: 100%;
+        backdrop-filter: blur(10px);
+        background-color: rgba(251, 241, 231, 1);
+        border-radius: 20px;
+        padding: 20px;
+        flex-grow: 1;
+        z-index: 2;
+
+        h5{
+            color: #8B3A33;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        p{
+            line-height: 1rem;
+            color: #8B3A33;
+            margin-bottom: 8px;
+        }
+    }
+}
+
+.right{
+    align-self: flex-end;
+}
+
+.left{
+    align-self: flex-start;
+}
+
+@media only screen and (max-width: 991px) {
+    .product{
+        width: 200px;
+        top: 180px;
+        left: 20px;
+    }
+  }
+
+@media only screen and (max-width: 767px) {
+
+    .container-fluid{
+        padding: 0;
+    }
+
+    .ingredient-section{
+        background-position-y: 20%;
+    }
+
+    .ing-row{
+        margin-top: 240px !important;
+    }
+
+    .ingredient{
+        background-color: rgba(251, 241, 231, .5) !important;
+    }
+
+    .product{
+        width: auto;
+        top: 100px;
+    }
+
+    .left{
+        align-self: center;
+    }
+
+    .right{
+        align-self: center;
+    }
+  }
